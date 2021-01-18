@@ -19,3 +19,8 @@ jobs:
         with:
           name: output-log-file
           path: output.log
+  update_release_draft:
+    runs-on: ubuntu-latest
+    steps:
+      # Drafts your next Release notes as Pull Requests are merged into "master"
+      - uses: release-drafter/release-drafter@v5
